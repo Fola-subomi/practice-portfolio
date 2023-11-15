@@ -1,0 +1,215 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+}
+.navbar{
+    text-transform: uppercase;
+    display: flex;
+    color: darkslategray;
+    justify-content: space-around;
+}
+.navlink{
+    text-decoration: none;
+    color: darkslategray;
+    margin: 5px;
+    display: flex;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+    display: flex;
+}  
+.navcode{
+    display: flex;
+    justify-content: space-around;
+}
+span{
+    color: rgb(55, 162, 162);
+}
+.dropdownLink{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.headshot{
+    border-radius: 50%;
+    align-self: center;
+    max-width: 200px;
+    width: 100%;
+    height: 204px;
+}
+.Name{
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.icon{
+    max-width: 250px;
+    order: 1;
+    max-height: 200px;
+}
+.blurb-info{
+    display: flex;
+    color: rgb(55, 162, 162);
+}
+.media-object{
+    display: flex;
+   margin-left: 200px;
+   align-items: center;
+}
+.icon-wrapper{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.blurb-wrapper-right{
+    display: block;
+    order: 2;
+    padding: 70px;
+    max-width: 500px;
+}
+.icon-r{
+    max-width: 200px;
+    order: 2;
+    max-height: 200px;
+}
+.blurb-wrapper-left{
+    display: block;
+    order: 1;
+    padding: 70px;
+    max-width: 500px;
+}
+.media-object2{
+    display: flex;
+   margin-left: 200px;
+   align-items: center;
+   flex-direction: row-reverse;
+}
+input{
+    padding: 1rem 2.5rem;
+    color: white;
+    background-color: rgb(55, 162, 162);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0.5rem 0.6rem 0.5rem rgba(0, 0, 0, 0.16);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.img{
+    width: 250px;
+    height: 150px;
+    margin: 2rem 0 1.5rem;
+    transition: .2s ease-in-out;
+    flex-wrap: wrap;    
+}
+.img :hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.des{
+    max-width: 250px;
+    margin-top: 0.5rem 
+}
+.past-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+.ex{
+    padding: 0 10% 50px 10%;
+    background-color: rgb(239, 248, 248);
+}
+.socials img{
+    max-width: 20px;
+    max-height: 20px;
+} 
+.socials{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-bottom: 10px;
+}
+.footer{
+    padding: 25px 0 25px 0;
+    background-color: rgb(55, 162, 162);
+}
+@media (max-width: 930px) {
+    .headshot{
+        
+        align-self: center;
+        max-width: 200px;
+        width: 100%;
+        height: 204px;
+    }
+    ul.Topnav li a.navlink{
+       display: none;
+    }
+    ul.Topnav li.dropdownLink{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+     }
+    ul.Topnav.responsive li a.navlink{
+        display: block;
+    }
+    .blurb-wrapper-right{
+        margin-top: -100px;
+        margin-left: -100px;
+        align-content: center;
+        justify-content: center;
+    }
+    .media-object{
+        flex-direction: column;
+    }
+    .icon{
+        align-content: center;
+        margin-left: -50px;
+    }
+    .Stuff{
+        align-items: center;
+    }
+    .blurb-wrapper-left{
+        margin-top: -100px;
+        margin-left: -100px;
+        align-content: center;
+        justify-content: center;
+    }
+    .media-object2{
+        flex-direction: column;
+    }
+    .icon-r{
+        margin-left: -50px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .socials{
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 730px) {
+    .past-projects{
+        flex-direction: column;
+        align-items: center
+    }
+}
